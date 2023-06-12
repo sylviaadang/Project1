@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #AEC2B6;
+    justify-content: space-between ;
+}
+
+h1 {
+    color: white;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons > a {
+    margin-top: 15px;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+    margin-top: 8px;
+    margin-right: 20px;
+    border-color: white;
+}
+
+body {
+    background-color: #AEC2B6;
+}
+
+.container-one {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+
+.sliding-image {
+    width: 100%;
+    margin-top: 15px;
+    margin: 0 auto;
+    height: 700px;
+}
+
+#mainPhoto {
+    object-fit: cover;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+}
+
+.sliding-image > h2 {
+    /* background-color: white; */
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 40%;
+    font-size: 500%;
+    height: 75px;
+    padding: 10px;
+}
+
+h4 {
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 44%;
+    font-size: 100%;
+    height: 75px;
+    padding: 10px;
+    width: 200px;
+}
+
+.search {
+    position: absolute;
+    top: 400px;
+    left: 41%;
+    border-radius: 30px;
+    width: 250px;
+    border: 2px solid grey;
+    height: 30px;
+}
+
+
+.mostLikes > h2 {
+    margin-top: 50px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+}
+
+.favorites {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 2px solid grey;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #F6F1F1;
+}
+
+.recentActivities > h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+}
+
+.recentActivity {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.pics {
+    filter: brightness(100%);
+}
+
+.reviews {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.prev-btn, .next-btn {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    border: none;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, black) 0%, white, 100%;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+.prev-btn {
+    left: 50px;
+    top: 50%;
+}
+
+.next-btn {
+    right: 50px;
+    top: 50%;
+}
+
+.review-container {
+    padding: 0 1vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.review-container::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card {
+    flex: 0 0 auto;
+    border: 2px solid white;
+    height: 250px;
+    width: 250px;
+}
+
+.image {
+    width: 20%;
+    height: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.review-container {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.reviews {
+    position: relative;
+}
+
+
+.reviews p {
+    text-align: center;
+    color: white;
+}
+
+/* .reviews:nth-chid(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+} */
+
+.review-photo {
+    width: 200px;
+    height: 150px;
+    margin-left: 25px;
+    border: 2px solid white;
+}
+
+.bottom-info {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 150px;
+    height: 2px;
+
+}
+
+.bottom-info > p {
+    margin: 20px;
+
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .nav {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-color: #AEC2B6;
+        /* justify-content: space-between ; */
+    }
+
+    h1 {
+        color: white;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    .buttons > a {
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        width: 50px;
+    }
+
+    .btn {
+        height: 30px;
+        width: 60px;
+        margin-top: 8px;
+        margin-right: 10px;
+        border-color: white;
+    }
+
+    body {
+        background-color: #AEC2B6;
+    }
+
+    .container-one {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+    }
+
+    .sliding-image {
+        width: 100%;
+        margin-top: 15px;
+        margin: 0 auto;
+        height: 700px;
+    }
+
+    #mainPhoto {
+        object-fit: cover;
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(75%);
+    }
+
+    .sliding-image > h2 {
+        /* background-color: white; */
+        color: white;
+        position: absolute;
+        top: 250px;
+        left: 15%;
+        font-size: 500%;
+        height: 75px;
+        padding: 10px;
+    }
+
+    h4 {
+        color: white;
+        position: absolute;
+        top: 350px;
+        left: 22%;
+        font-size: 100%;
+        height: 75px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .search {
+        position: absolute;
+        top: 400px;
+        left: 20%;
+        border-radius: 30px;
+        width: 250px;
+        border: 2px solid grey;
+        height: 30px;
+    }
+
+
+    .mostLikes > h2 {
+        margin-top: 50px;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 250%;
+        color: white;
+    }
+
+    .favorites {
+        display: block;
+        /* vertical-align: top; */
+        margin-left: 10%;
+    }
+
+    .card {
+        border: 2px solid grey;
+        height: 250px;
+        width: 300px;
+        /* text-align: center; */
+        box-shadow: 5px 5px 5px grey;
+        background-color: #F6F1F1;
+        margin-top: 40px;
+    }
+}
